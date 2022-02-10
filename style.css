@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "arial", sans-serif;
+  text-align: center;
+}
+
+#content {
+  display: grid;
+  /* grid-template-columns: 30% 20% 50%; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: repeat(9, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#content div {
+  background: lightblue;
+  padding: 30px;
+}
+
+#content div:nth-child(even) {
+  background: #777;
+}
